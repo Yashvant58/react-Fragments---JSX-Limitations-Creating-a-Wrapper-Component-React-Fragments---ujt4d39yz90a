@@ -12,18 +12,19 @@ const App = () => {
   const onButtonClick = () => {
     setList([])
     for (let i = 1; i < Number(value)+1; i++) {
-      
-      setList((prev) => [...prev, i]);
+        setList((prev) => [...prev, i]);
+
     }
-   
+
   };
- 
+
 
   const onInputChange = (e) => {
     setValue(e.target.value);
   };
 
   return (
+    <>
     <div id="main">
 
       <input id="input" onChange={onInputChange} />
@@ -32,6 +33,7 @@ const App = () => {
       <List listx={list} />
       </ul>
     </div>
+    </>
   );
 };
 

@@ -4,10 +4,13 @@ import ListItems from './ListItems';
  const List = ({listx}) =>{
   return(
     // code here
-    
-      <ListItems  />
-    
-    
+      <>
+      {listx.map((e)=>{
+       return <ListItems valuex={e}/>
+      })}
+       
+     </>
+     
   )
 }
 
